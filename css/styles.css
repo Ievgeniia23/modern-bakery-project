@@ -1,0 +1,81 @@
+ul {
+  list-style-type: none;
+}
+
+.button {
+  border: 2px solid var(--bakery-landing-1-c2);
+  border-radius: 8px;
+  padding: 16px 32px;
+  width: 238px;
+  height: 59px;
+  background-color: var(--bakery-landing-1-c2);
+  cursor: pointer;
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 18px;
+  color: var(--bakery-landing-1-background);
+}
+
+.button:hover {
+  background-color: transparent;
+  font-family: var(--font-family);
+  color: var(--bakery-landing-1-s3);
+}
+
+.link {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+  color: var(--bakery-landing-1-background);
+  text-decoration: none;
+}
+
+.link:hover {
+  font-weight: 600;
+  color: var(--bakery-landing-1-c2);
+}
+
+.hero-title {
+  font-family: var(--font-family);
+  font-weight: 900;
+  font-size: 128px;
+  text-align: center;
+  color: var(--bakery-landing-1-background);
+  text-align: center;
+}
+
+.hero-title .accent {
+  color: var(--bakery-landing-1-c2);
+}
+.advantages-list {
+  padding: 16px 99px;
+  width: 1440px;
+  height: 62px;
+  backdrop-filter: blur(4px);
+  background: var(--bakery-landing-1-c2);
+  color: var(--bakery-landing-1-background);
+}
+.section-title {
+  font-family: var(--font-family);
+  font-weight: 900;
+  font-size: 64px;
+  line-height: 131%;
+  color: var(--bakery-landing-1-s1);
+}
+.accent-traditional-section {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: var(--bakery-landing-1-c2);
+}
+
+.accent-five-minutes {
+  font-weight: 600;
+  color: var(--bakery-landing-1-c2);
+}
+
+.accent-chefs-section {
+  color: var(--bakery-landing-1-s3);
+}

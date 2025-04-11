@@ -4,6 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Modern bakery</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope&family=Poppins:wght@300;400;600;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/index.css" />
   </head>
   <body>
     <header>
@@ -12,37 +22,39 @@
           <img src="./images/logo.svg" alt="logo of Modern bakery" />
         </a>
         <ul>
-          <li><a href="#traditional-section">Our tradition</a></li>
-          <li><a href="#chefs-section">Our chefs</a></li>
-          <li><a href="#format-section">Formats</a></li>
-          <li><a href="#contact-section">Contacts</a></li>
+          <li><a class="link" href="#traditional-section">Our tradition</a></li>
+          <li><a class="link" href="#chefs-section">Our chefs</a></li>
+          <li><a class="link" href="#format-section">Formats</a></li>
+          <li><a class="link" href="#contact-section">Contacts</a></li>
         </ul>
       </nav>
-      <button type="button">Order a call</button>
+      <button class="button" type="button">Order a call</button>
     </header>
 
     <main>
       <!-- Section 1 -->
       <section>
-        <h1>Modern bakery</h1>
+        <h1 class="hero-title"><span class="accent">Modern</span> bakery</h1>
       </section>
 
       <!-- Section 2 -->
       <section id="traditional-section">
-        <ul>
+        <ul class="advantages-list">
           <li>High demand in the market</li>
           <li>Affordable formats for the budget</li>
           <li>Experienced management team</li>
         </ul>
-        <h2>New format for traditions</h2>
+        <h2 class="section-title">New format for traditions</h2>
         <p>
-          <span>shop bakery</span> - is a bakery that has taken the best of
-          everything and preserved the taste of traditional pastries and the
-          naturalness of the ingredients.
+          <span class="accent-traditional-section">shop bakery</span> - is a
+          bakery that has taken the best of everything and preserved the taste
+          of traditional pastries and the naturalness of the ingredients.
         </p>
         <p>
           We work like the most famous chains -
-          <span> 5 minutes and the order is ready.</span>
+          <span class="accent-five-minutes">
+            5 minutes and the order is ready.</span
+          >
           And our bakeries have a stylish design and high quality service!
         </p>
         <img
@@ -53,7 +65,9 @@
 
       <!-- Section 3 -->
       <section id="chefs-section">
-        <h2>Our best chefs</h2>
+        <h2 class="section-title">
+          Our best <span class="accent-chefs-section">chefs</span>
+        </h2>
         <ul>
           <li>
             <article>
@@ -84,7 +98,7 @@
       <!-- Section 4 -->
 
       <section id="format-section">
-        <h2>Formats</h2>
+        <h2 class="section-title">Formats</h2>
         <ul>
           <li>
             <article>
@@ -114,7 +128,6 @@
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d40465.12282942901!2d10.257159715121324!3d45.535970251717835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4781763faa051585%3A0xf7c65b90f8563cf4!2sCastello%20di%20Brescia!5e1!3m2!1sit!2sit!4v1744022997002!5m2!1sit!2sit"
         width="603"
         height="595"
-    
         allowfullscreen=""
         loading="lazy"
         referrerpolicy="no-referrer-when-downgrade"
