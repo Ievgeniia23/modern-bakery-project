@@ -148,8 +148,6 @@ ul {
   border-radius: 400px 400px 0 0;
 }
 
-
-
 /* chefs-section */
 .chefs-title {
   font-weight: 900;
@@ -181,9 +179,8 @@ ul {
   width: 240px;
   height: 390px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25),
-  -16px 16px 0 0 var(--bakery-landing-1-background),
-  -16px 16px 0 2px var(--bakery-landing-1-c5);
-
+    -16px 16px 0 0 var(--bakery-landing-1-background),
+    -16px 16px 0 2px var(--bakery-landing-1-c5);
 }
 /* formats-section */
 .formats-title {
@@ -195,6 +192,23 @@ ul {
   font-weight: 600;
   font-size: 24px;
   color: var(--bakery-landing-1-background);
+}
+
+.slider-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  width: 44px;
+  height: 44px;
+  background-color: transparent;
+  border-radius: 50%;
+  fill: var(--bakery-landing-1-s1);
+  border: 1px solid var(--bakery-landing-1-s1);
+}
+.slider-button:hover {
+  background-color: var(--bakery-landing-1-s1);
+  fill: var(--bakery-landing-1-background);
 }
 
 .formats-list {
@@ -258,4 +272,10 @@ iframe {
   max-width: 603px;
   height: 595px;
   border: 0;
+}
+.social-icon {
+  fill: var(--bakery-landing-1-background);
+}
+.social-icon:hover {
+  fill: var(--bakery-landing-1-c2);
 }
