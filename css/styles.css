@@ -174,6 +174,25 @@ ul {
   font-weight: 600;
   font-size: 40px;
 }
+.chefs-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px 30px;
+}
+.chefs-item {
+  flex-basis: calc((100% - 30px) / 2);
+}
+.chef-card {
+  display: flex;
+  gap: 30px;
+}
+
+.chef-text p {
+  margin-bottom: 32px;
+}
+.chef-text :last-child {
+  margin-bottom: 0;
+}
 .chef-photo {
   border-radius: 4px 4px 4px 200px;
   width: 240px;
@@ -186,7 +205,11 @@ ul {
 .formats-title {
   margin-bottom: 80px;
 }
-
+.formats-container {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
 .formats-title {
   margin-bottom: 16px;
   font-weight: 600;
@@ -199,6 +222,7 @@ ul {
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  flex-shrink: 0;
   width: 44px;
   height: 44px;
   background-color: transparent;
@@ -240,8 +264,18 @@ ul {
 }
 
 /* contact-section */
+.contact-section {
+  padding-bottom: 96px;
+}
+.contact-container {
+  display: flex;
+  gap: 32px;
+}
+
 .contact-title {
   margin-bottom: 16px;
+  font-weight: 900;
+  font-size: 64px;
 }
 
 /* footer */
@@ -251,6 +285,31 @@ ul {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+.footer-container {
+  display: flex;
+  gap: 20px;
+  padding: 32px 0px;
+}
+.footer-nav,
+.footer-address {
+  display: flex;
+  gap: 20px;
+  flex-basis: 50%;
+}
+.footer-logo {
+  flex-grow: 1;
+}
+.footer-menu {
+  flex-grow: 1;
+}
+
+.address-info {
+  flex-grow: 1;
+}
+.address-list {
+  flex-grow: 1;
 }
 .address-link {
   font-weight: 300;
@@ -271,7 +330,8 @@ iframe {
   width: 100%;
   max-width: 603px;
   height: 595px;
-  border: 0;
+  border: none;
+  border-radius: 16px;
 }
 .social-icon {
   fill: var(--bakery-landing-1-background);
