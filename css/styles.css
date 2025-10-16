@@ -367,3 +367,46 @@ iframe {
 .social-icon:hover {
   fill: var(--bakery-landing-1-c2);
 }
+/* Modal */
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal {
+  width: 880px;
+  height: 880px;
+  background-color: var(--bakery-landing-1-background);
+  border-radius: 32px;
+  position: relative;
+}
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.modal-btn-close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  background-color: transparent;
+  border: none;
+  top: 40px;
+  right: 40px;
+  width: 32px;
+  height: 32px;
+  
+}
+.icon-cross {
+  stroke: var(--bakery-landing-1-s1);
+}
