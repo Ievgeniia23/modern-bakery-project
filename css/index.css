@@ -60,3 +60,6 @@ p {
 a {
   display: inline-block;
 }
+button {
+  cursor: pointer;
+}
