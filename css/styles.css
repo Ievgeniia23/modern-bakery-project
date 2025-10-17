@@ -1,9 +1,3 @@
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
 .section {
   padding: 48px 0;
 }
@@ -14,38 +8,19 @@ ul {
   padding: 0 24px;
 }
 
-.button {
-  border: 2px solid var(--bakery-landing-1-c2);
-  border-radius: 8px;
-  padding: 16px 32px;
-  width: 238px;
-  height: 59px;
-  background-color: var(--bakery-landing-1-c2);
-  cursor: pointer;
-  font-weight: 600;
-  color: var(--bakery-landing-1-background);
-}
-
-.button:hover {
-  background-color: transparent;
-  font-family: var(--font-family);
-  color: var(--bakery-landing-1-s3);
-}
-
-.link {
-  text-align: center;
-  color: var(--bakery-landing-1-background);
-  text-decoration: none;
-}
-
-.link:hover {
-  color: var(--bakery-landing-1-c2);
-}
 /* Header */
+.header{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 32px;
+}
 .header-container {
   display: flex;
   align-items: center;
   gap: 40px;
+ 
 }
 
 .header-nav {
@@ -61,13 +36,50 @@ ul {
   flex-grow: 1;
   justify-content: center;
 }
+.modal-btn-open {
+  border: 2px solid var(--bakery-landing-1-c2);
+  border-radius: 8px;
+  padding: 16px 32px;
+  width: 238px;
+  height: 59px;
+  background-color: var(--bakery-landing-1-c2);
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--bakery-landing-1-background);
+  transition: backgroun-color 0.3s, color 0.3s;
+}
+
+.modal-btn-open:hover {
+  background-color: var(--bakery-landing-1-background);
+  color: var(--bakery-landing-1-s3);
+}
+
+.link {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+  color: var(--bakery-landing-1-background);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.link:hover {
+  color: var(--bakery-landing-1-c2);
+}
 /* Hero-section */
 
 .hero-section {
   padding: 272px 0;
-  background-image: url('../images/hero-background@1.webp');
+  background-image:  linear-gradient(
+      102.76deg,
+      rgba(18, 18, 17, 0.78) 2.03%,
+      rgba(18, 18, 17, 0.6) 58.46%,
+      rgba(18, 18, 17, 0) 90.36%
+    ),
+  url('../images/hero-background@1.webp');
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center top;
   background-size: cover;
 }
 
@@ -210,8 +222,9 @@ ul {
     -16px 16px 0 2px var(--bakery-landing-1-c5);
 }
 /* formats-section */
-.formats-title {
+.format-title {
   margin-bottom: 80px;
+ text-align: center;
 }
 .formats-container {
   display: flex;
@@ -250,25 +263,54 @@ ul {
 
 .formats-item {
   flex-basis: calc((100% - 40px) / 3);
-}
+  }
 .formats-card {
   height: 444px;
+  border: 1px solid lightgrey;
+  border-radius: 16px;
+  padding:248px 24px 24px 24px;
+  transition: transform 0.3s;
+}
+.formats-card:hover {
+  transform: scale(1.05);
+}
+.formats-card p {
+  margin-bottom: 0;
+}
+.walrus{
   background-image: linear-gradient(
     180deg,
     rgba(49, 38, 26, 0) 55%,
     rgba(49, 38, 26, 0.71) 72%,
     rgba(49, 38, 26, 1) 100%
-  );
-
-  border: 1px solid lightgrey;
-  border-radius: 16px;
-  padding: 24px;
+  ),
+  url('../images/formats-img/walrus_desk_@1x.webp');
 }
-
+.horseshoe{
+  background-image:linear-gradient(
+    180deg,
+    rgba(49, 38, 26, 0) 55%,
+    rgba(49, 38, 26, 0.71) 72%,
+    rgba(49, 38, 26, 1) 100%
+  ),
+   url('../images/formats-img/horseShoe_desk_@1x.webp');
+}
+.handlebar{
+  background-image:linear-gradient(
+    180deg,
+    rgba(49, 38, 26, 0) 55%,
+    rgba(49, 38, 26, 0.71) 72%,
+    rgba(49, 38, 26, 1) 100%
+  ),
+   url('../images/formats-img/handlebar_desk_@1x.webp');
+}
 .formats-text {
   font-weight: 300;
   font-size: 14px;
   color: var(--bakery-landing-1-background);
+}
+.btn-next {
+  transform: rotate(180deg);
 }
 
 /* contact-section */
@@ -379,11 +421,15 @@ iframe {
   align-items: center;
   justify-content: center;
   background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px 0;
+  transition: opacity 0.5s, visibility 0.5s;
 }
 
 .modal {
-  width: 880px;
-  height: 880px;
+  width: 100%;
+  max-width: 880px;
+  height: 100%;
+  max-height: 880px;
   background-color: var(--bakery-landing-1-background);
   border-radius: 32px;
   position: relative;
@@ -405,7 +451,6 @@ iframe {
   right: 40px;
   width: 32px;
   height: 32px;
-  
 }
 .icon-cross {
   stroke: var(--bakery-landing-1-s1);

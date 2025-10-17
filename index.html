@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="./css/index.css" />
   </head>
   <body>
-    <header>
+    <header class="header">
       <div class="container">
         <div class="header-container">
           <nav class="header-nav">
@@ -32,7 +32,7 @@
               <li><a class="link" href="#contact-section">Contacts</a></li>
             </ul>
           </nav>
-          <button class="button modal-btn-open" type="button">
+          <button class="modal-btn-open" type="button">
             Order a call
           </button>
         </div>
@@ -156,7 +156,7 @@
 
       <section class="section" id="formats-section">
         <div class="container">
-          <h2 class="formats-title section-title">Formats</h2>
+          <h2 class="format-title section-title">Formats</h2>
           <div class="formats-container">
             <button class="slider-button" type="button">
               <svg width="18" height="16">
@@ -166,7 +166,7 @@
 
             <ul class="formats-list">
               <li class="formats-item">
-                <article class="formats-card">
+                <article class="formats-card walrus">
                   <h3 class="formats-title">Walrus</h3>
                   <div class="formats-text">
                     <p>Area: up to 120 m2</p>
@@ -180,7 +180,7 @@
                 </article>
               </li>
               <li class="formats-item">
-                <article class="formats-card">
+                <article class="formats-card horseshoe">
                   <div class="formats-text">
                     <h3 class="formats-title">Horseshoe</h3>
                     <p>Area: up to 25 m2</p>
@@ -193,7 +193,7 @@
                 </article>
               </li>
               <li class="formats-item">
-                <article class="formats-card">
+                <article class="formats-card handlebar">
                   <h3 class="formats-title">Handlebar</h3>
                   <div class="formats-text">
                     <p>Area: up to 15 m2</p>
@@ -204,7 +204,7 @@
                 </article>
               </li>
             </ul>
-            <button class="slider-button" type="button">
+            <button class="slider-button btn-next" type="button">
               <svg width="18" height="16">
                 <use href="./images/sprite.svg#icon-arrow"></use>
               </svg>
@@ -310,7 +310,7 @@
     </footer>
     <!-- Modal -->
 
-    <div class="backdrop">
+    <div class="backdrop is-hidden">
       <div class="modal">
         <button class="modal-btn-close" type="button">
           <svg class="icon-cross" width="18" height="18">
