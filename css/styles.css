@@ -36,7 +36,7 @@
   flex-grow: 1;
   justify-content: center;
 }
-.modal-btn-open {
+.order-btn {
   border: 2px solid var(--bakery-landing-1-c2);
   border-radius: 8px;
   padding: 16px 32px;
@@ -45,11 +45,12 @@
   background-color: var(--bakery-landing-1-c2);
   cursor: pointer;
   font-weight: 600;
+  font-size: 18px;
   color: var(--bakery-landing-1-background);
   transition: backgroun-color 0.3s, color 0.3s;
 }
 
-.modal-btn-open:hover {
+.order-btn:hover {
   background-color: var(--bakery-landing-1-background);
   color: var(--bakery-landing-1-s3);
 }
@@ -430,9 +431,11 @@ iframe {
   max-width: 880px;
   height: 100%;
   max-height: 880px;
+  padding: 128px;
   background-color: var(--bakery-landing-1-background);
   border-radius: 32px;
   position: relative;
+  overflow-y: auto;
 }
 .backdrop.is-hidden {
   opacity: 0;
@@ -454,4 +457,60 @@ iframe {
 }
 .icon-cross {
   stroke: var(--bakery-landing-1-s1);
+}
+.order-title{
+  margin-bottom: 8px;
+ text-align: center;
+}
+.order-text {
+  font-family: var(--second-family);
+font-weight: 400;
+font-size: 18px;
+text-align: center;
+color: var(--bakery-landing-1-s3);
+}
+
+/* Form */
+.form-field {
+  margin-bottom: 32px;
+}
+
+.form-label {
+  display: block;
+  
+}
+
+.form-input {
+  padding: 16px 42px;
+  width: 100%;
+  border: 1px solid var(--bakery-landing-1-s4);
+border-radius: 8px;
+background-color: transparent;
+transition: border-color 0.3s;
+}
+.form-input:focus {
+border-color:var(--bakery-landing-1-c2);
+outline: none;
+}
+
+.modal-btn {
+  width: 232px;
+  display: block;
+  margin: 0 auto 24px;
+}
+
+.form-terms,
+.form-terms-link {
+  margin: 0 auto;
+  width: 220px;
+font-family: "Gilroy", sans-serif;
+font-weight: 500;
+font-size: 12px;
+line-height: 1.46;
+text-align: center;
+
+}
+.form-terms-link {
+color: var(--bakery-landing-1-s1);
+text-underline-offset: 2px;
 }

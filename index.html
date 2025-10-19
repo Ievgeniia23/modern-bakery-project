@@ -32,9 +32,7 @@
               <li><a class="link" href="#contact-section">Contacts</a></li>
             </ul>
           </nav>
-          <button class="modal-btn-open" type="button">
-            Order a call
-          </button>
+          <button class="order-btn modal-btn-open" type="button">Order a call</button>
         </div>
       </div>
     </header>
@@ -317,6 +315,35 @@
             <use href="./images/sprite.svg#icon-cross"></use>
           </svg>
         </button>
+        <h2 class="section-title order-title">Order a call</h2>
+        <p class="order-text">
+          Leave your request and our specialist will contact you!
+        </p>
+
+        <form id="contact-form">
+          <div class="form-field">
+          <label for="name">Name</label>
+          <input
+            placeholder="input your name"
+            class="form-input"
+            type="text"
+            id="name"
+            name="name"
+          />
+          </div>
+<div class="form-field">
+          <label for="tel">Telephone</label>
+          <input class="form-input" type="tel" id="tel" name="tel" />
+          </div>
+<div class="form-field">
+          <label class="form-label" for="email">Email</label>
+          <input class="form-input" type="email" id="email" name="email" />
+        </div>
+      
+        <button type="submit" class="order-btn modal-btn">Order a call</button>
+      <p class="form-terms">By clicking on the button, I agree to <a class="form-terms-link" href="#">the privacy policy</a></p>  
+      
+      </form>
       </div>
     </div>
 
