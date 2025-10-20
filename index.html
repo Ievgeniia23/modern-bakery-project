@@ -32,7 +32,9 @@
               <li><a class="link" href="#contact-section">Contacts</a></li>
             </ul>
           </nav>
-          <button class="order-btn modal-btn-open" type="button">Order a call</button>
+          <button class="order-btn modal-btn-open" type="button">
+            Order a call
+          </button>
         </div>
       </div>
     </header>
@@ -218,6 +220,52 @@
           <div class="form-container">
             <h2 class="contact-title">Join the bakery chain</h2>
             <p>Fill in the form to get in touch with us!</p>
+            <form id="contact-form">
+              <div class="form-field">
+                <label class="form-label visually-hidden" for="name"
+                  >Name</label
+                >
+                <input
+                  class="form-input"
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Name"
+                />
+              </div>
+              <div class="form-field">
+                <label class="form-label visually-hidden" for="tel"
+                  >Telephone</label
+                >
+                <input
+                  class="form-input"
+                  type="tel"
+                  id="tel"
+                  name="tel"
+                  placeholder="Telephone"
+                />
+              </div>
+              <div class="form-field">
+                <label class="form-label visually-hidden" for="email"
+                  >Email</label
+                >
+                <input
+                  class="form-input"
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Email"
+                />
+              </div>
+
+              <button type="submit" class="order-btn modal-btn">
+                Order a call
+              </button>
+              <p class="form-terms">
+                By clicking on the button, I agree to
+                <a class="form-terms-link" href="#">the privacy policy</a>
+              </p>
+            </form>
           </div>
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d40465.12282942901!2d10.257159715121324!3d45.535970251717835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4781763faa051585%3A0xf7c65b90f8563cf4!2sCastello%20di%20Brescia!5e1!3m2!1sit!2sit!4v1744022997002!5m2!1sit!2sit"
@@ -320,30 +368,48 @@
           Leave your request and our specialist will contact you!
         </p>
 
-        <form id="contact-form">
+        <form id="modal-form">
           <div class="form-field">
-          <label for="name">Name</label>
-          <input
-            placeholder="input your name"
-            class="form-input"
-            type="text"
-            id="name"
-            name="name"
-          />
+            <label class="form-label visually-hidden" for="name">Name</label>
+            <input
+              class="form-input"
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Name"
+            />
           </div>
-<div class="form-field">
-          <label for="tel">Telephone</label>
-          <input class="form-input" type="tel" id="tel" name="tel" />
+          <div class="form-field">
+            <label class="form-label visually-hidden" for="tel"
+              >Telephone</label
+            >
+            <input
+              class="form-input"
+              type="tel"
+              id="tel"
+              name="tel"
+              placeholder="Telephone"
+            />
           </div>
-<div class="form-field">
-          <label class="form-label" for="email">Email</label>
-          <input class="form-input" type="email" id="email" name="email" />
-        </div>
-      
-        <button type="submit" class="order-btn modal-btn">Order a call</button>
-      <p class="form-terms">By clicking on the button, I agree to <a class="form-terms-link" href="#">the privacy policy</a></p>  
-      
-      </form>
+          <div class="form-field">
+            <label class="form-label visually-hidden" for="email">Email</label>
+            <input
+              class="form-input"
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Email"
+            />
+          </div>
+
+          <button type="submit" class="order-btn modal-btn">
+            Order a call
+          </button>
+          <p class="form-terms">
+            By clicking on the button, I agree to
+            <a class="form-terms-link" href="#">the privacy policy</a>
+          </p>
+        </form>
       </div>
     </div>
 

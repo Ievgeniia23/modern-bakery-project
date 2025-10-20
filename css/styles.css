@@ -9,7 +9,7 @@
 }
 
 /* Header */
-.header{
+.header {
   position: absolute;
   top: 0;
   left: 0;
@@ -20,7 +20,6 @@
   display: flex;
   align-items: center;
   gap: 40px;
- 
 }
 
 .header-nav {
@@ -72,13 +71,13 @@
 
 .hero-section {
   padding: 272px 0;
-  background-image:  linear-gradient(
+  background-image: linear-gradient(
       102.76deg,
       rgba(18, 18, 17, 0.78) 2.03%,
       rgba(18, 18, 17, 0.6) 58.46%,
       rgba(18, 18, 17, 0) 90.36%
     ),
-  url('../images/hero-background@1.webp');
+    url('../images/hero-background@1.webp');
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
@@ -225,7 +224,7 @@
 /* formats-section */
 .format-title {
   margin-bottom: 80px;
- text-align: center;
+  text-align: center;
 }
 .formats-container {
   display: flex;
@@ -264,12 +263,12 @@
 
 .formats-item {
   flex-basis: calc((100% - 40px) / 3);
-  }
+}
 .formats-card {
   height: 444px;
   border: 1px solid lightgrey;
   border-radius: 16px;
-  padding:248px 24px 24px 24px;
+  padding: 248px 24px 24px 24px;
   transition: transform 0.3s;
 }
 .formats-card:hover {
@@ -278,32 +277,32 @@
 .formats-card p {
   margin-bottom: 0;
 }
-.walrus{
+.walrus {
   background-image: linear-gradient(
-    180deg,
-    rgba(49, 38, 26, 0) 55%,
-    rgba(49, 38, 26, 0.71) 72%,
-    rgba(49, 38, 26, 1) 100%
-  ),
-  url('../images/formats-img/walrus_desk_@1x.webp');
+      180deg,
+      rgba(49, 38, 26, 0) 55%,
+      rgba(49, 38, 26, 0.71) 72%,
+      rgba(49, 38, 26, 1) 100%
+    ),
+    url('../images/formats-img/walrus_desk_@1x.webp');
 }
-.horseshoe{
-  background-image:linear-gradient(
-    180deg,
-    rgba(49, 38, 26, 0) 55%,
-    rgba(49, 38, 26, 0.71) 72%,
-    rgba(49, 38, 26, 1) 100%
-  ),
-   url('../images/formats-img/horseShoe_desk_@1x.webp');
+.horseshoe {
+  background-image: linear-gradient(
+      180deg,
+      rgba(49, 38, 26, 0) 55%,
+      rgba(49, 38, 26, 0.71) 72%,
+      rgba(49, 38, 26, 1) 100%
+    ),
+    url('../images/formats-img/horseShoe_desk_@1x.webp');
 }
-.handlebar{
-  background-image:linear-gradient(
-    180deg,
-    rgba(49, 38, 26, 0) 55%,
-    rgba(49, 38, 26, 0.71) 72%,
-    rgba(49, 38, 26, 1) 100%
-  ),
-   url('../images/formats-img/handlebar_desk_@1x.webp');
+.handlebar {
+  background-image: linear-gradient(
+      180deg,
+      rgba(49, 38, 26, 0) 55%,
+      rgba(49, 38, 26, 0.71) 72%,
+      rgba(49, 38, 26, 1) 100%
+    ),
+    url('../images/formats-img/handlebar_desk_@1x.webp');
 }
 .formats-text {
   font-weight: 300;
@@ -458,16 +457,16 @@ iframe {
 .icon-cross {
   stroke: var(--bakery-landing-1-s1);
 }
-.order-title{
+.order-title {
   margin-bottom: 8px;
- text-align: center;
+  text-align: center;
 }
 .order-text {
   font-family: var(--second-family);
-font-weight: 400;
-font-size: 18px;
-text-align: center;
-color: var(--bakery-landing-1-s3);
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+  color: var(--bakery-landing-1-s3);
 }
 
 /* Form */
@@ -475,22 +474,25 @@ color: var(--bakery-landing-1-s3);
   margin-bottom: 32px;
 }
 
-.form-label {
-  display: block;
-  
+.form-input::placeholder {
+  font-family: var(--font3);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.17;
+  color: var(--bakery-landing-1-s4);
 }
 
 .form-input {
   padding: 16px 42px;
   width: 100%;
   border: 1px solid var(--bakery-landing-1-s4);
-border-radius: 8px;
-background-color: transparent;
-transition: border-color 0.3s;
+  border-radius: 8px;
+  background-color: transparent;
+  transition: border-color 0.3s;
 }
 .form-input:focus {
-border-color:var(--bakery-landing-1-c2);
-outline: none;
+  border-color: var(--bakery-landing-1-c2);
+  outline: none;
 }
 
 .modal-btn {
@@ -503,14 +505,13 @@ outline: none;
 .form-terms-link {
   margin: 0 auto;
   width: 220px;
-font-family: "Gilroy", sans-serif;
-font-weight: 500;
-font-size: 12px;
-line-height: 1.46;
-text-align: center;
-
+  font-family: 'Gilroy', sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.46;
+  text-align: center;
 }
 .form-terms-link {
-color: var(--bakery-landing-1-s1);
-text-underline-offset: 2px;
+  color: var(--bakery-landing-1-s1);
+  text-underline-offset: 2px;
 }
