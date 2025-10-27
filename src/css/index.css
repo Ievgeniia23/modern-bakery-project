@@ -70,3 +70,19 @@ ul {
   padding: 0;
 }
 
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+  
+}
+
+.section {
+  padding: 48px 0;
+}
+.container {
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 24px;
+}

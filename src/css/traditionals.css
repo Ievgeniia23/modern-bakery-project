@@ -1,0 +1,32 @@
+/* traditional-section */
+
+.traditional-section {
+  padding-top: 96px;
+}
+
+.traditions-container {
+  display: flex;
+  gap: 104px;
+}
+
+.traditional-title {
+  margin-bottom: 42px;
+}
+
+.accent-traditional-section {
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--bakery-landing-1-c2);
+}
+
+.accent-five-minutes {
+  font-weight: 600;
+  color: var(--bakery-landing-1-c2);
+}
+
+.traditions-content {
+  max-width: 708px;
+}
+.traditional-photo {
+  border-radius: 400px 400px 0 0;
+}
