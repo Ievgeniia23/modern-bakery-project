@@ -1,0 +1,47 @@
+
+/* Form */
+.form-field {
+  margin-bottom: 32px;
+}
+
+.form-input::placeholder {
+  font-family: var(--font3);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.17;
+  color: var(--bakery-landing-1-s4);
+}
+
+.form-input {
+  padding: 16px 42px;
+  width: 100%;
+  border: 1px solid var(--bakery-landing-1-s4);
+  border-radius: 8px;
+  background-color: transparent;
+  transition: border-color 0.3s;
+}
+.form-input:focus {
+  border-color: var(--bakery-landing-1-c2);
+  outline: none;
+}
+
+.modal-btn {
+  width: 232px;
+  display: block;
+  margin: 0 auto 24px;
+}
+
+.form-terms,
+.form-terms-link {
+  margin: 0 auto;
+  width: 220px;
+  font-family: 'Gilroy', sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.46;
+  text-align: center;
+}
+.form-terms-link {
+  color: var(--bakery-landing-1-s1);
+  text-underline-offset: 2px;
+}

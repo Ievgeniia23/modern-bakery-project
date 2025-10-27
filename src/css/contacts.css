@@ -1,0 +1,14 @@
+/* contact-section */
+.contact-section {
+  padding-bottom: 96px;
+}
+.contact-container {
+  display: flex;
+  gap: 32px;
+}
+
+.contact-title {
+  margin-bottom: 16px;
+  font-weight: 900;
+  font-size: 64px;
+}

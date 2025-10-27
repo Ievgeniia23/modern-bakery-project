@@ -12,8 +12,7 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="./css/styles.css" />
-    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./src/css/main.css" />
   </head>
   <body>
     <header class="header">
@@ -21,7 +20,7 @@
         <div class="header-container">
           <nav class="header-nav">
             <a href="/">
-              <img src="./images/logo.svg" alt="logo of Modern bakery" />
+              <img src="/src/img/logo.svg" alt="logo of Modern bakery" />
             </a>
             <ul class="header-menu">
               <li>
@@ -85,7 +84,11 @@
             </div>
             <img
               class="traditional-photo"
-              src="./images/traditional_photo_desk_@1x.webp"
+              srcset="
+                /src/img/traditionals/traditional_photo_desk_@1x.webp 1x,
+                /src/img/traditionals/traditional_photo_desk_@2x.webp 2x
+              "
+              src="/src/img/traditionals/traditional_photo_desk_@1x.webp"
               alt="The baker are looking at the fresh bread and are smiling"
             />
           </div>
@@ -104,8 +107,15 @@
               <article class="chef-card">
                 <img
                   class="chef-photo"
-                  src="./images/Sofia_chef_desk_@1x.webp"
-                  alt="Sofia`s chef foto"
+                  srcset="
+                    ./src/img/chefs/Sofia_chef_desk_@1x.webp 240w,
+                    ./src/img/chefs/Sofia_chef_desk_@2x.webp 480w,
+                    ./src/img/chefs/Sofia_chef_mob_@1x.webp  140w,
+                    ./src/img/chefs/Sofia_chef_mob_@2x.webp  280w
+                  "
+                  sizes="(min-width:361px) 240px, (max-width: 360px) 140px"
+                  src="./src/img/chefs/Sofia_chef_desk_@1x.webp"
+                  alt="Sofia's chef photo"
                 />
                 <div class="chef-info">
                   <h3 class="chef-title">Sofia</h3>
@@ -129,8 +139,15 @@
               <article class="chef-card">
                 <img
                   class="chef-photo"
-                  src="./images/Alex_chef_desk_@1x.webp"
-                  alt="Alex`s chef foto"
+                  srcset="
+                    ./src/img/chefs/Alex_chef_desk_@1x.webp 240w,
+                    ./src/img/chefs/Alex_chef_desk_@2x.webp 480w,
+                    ./src/img/chefs/Alex_chef_mob_@1x.webp  140w,
+                    ./src/img/chefs/Alex_chef_mob_@2x.webp  280w
+                  "
+                  sizes="(min-width:361px) 240px, (max-width: 360px) 140px"
+                  src="./src/img/chefs/Alex_chef_desk_@1x.webp"
+                  alt="Alex's chef photo"
                 />
                 <div class="chef-info">
                   <h3 class="chef-title">Alex</h3>
@@ -160,7 +177,7 @@
           <div class="formats-container">
             <button class="slider-button" type="button">
               <svg width="18" height="16">
-                <use href="./images/sprite.svg#icon-arrow"></use>
+                <use href="./src/img/sprite.svg#icon-arrow"></use>
               </svg>
             </button>
 
@@ -206,7 +223,7 @@
             </ul>
             <button class="slider-button btn-next" type="button">
               <svg width="18" height="16">
-                <use href="./images/sprite.svg#icon-arrow"></use>
+                <use href="./src/img/sprite.svg#icon-arrow"></use>
               </svg>
             </button>
           </div>
@@ -291,7 +308,7 @@
           <nav class="footer-nav">
             <div class="footer-logo">
               <a href="">
-                <img src="./images/logo.svg" alt="logo of Modern bakery" />
+                <img src="./src/img/logo.svg" alt="logo of Modern bakery" />
               </a>
             </div>
             <ul class="footer-menu">
@@ -327,7 +344,7 @@
               <li>
                 <a href="#">
                   <svg class="social-icon" width="32" height="32">
-                    <use href="./images/sprite.svg#icon-facebook"></use>
+                    <use href="./src/img/sprite.svg#icon-facebook"></use>
                   </svg>
                 </a>
               </li>
@@ -335,7 +352,7 @@
               <li>
                 <a href="#">
                   <svg class="social-icon" width="32" height="32">
-                    <use href="./images/sprite.svg#icon-instagram"></use>
+                    <use href="./src/img/sprite.svg#icon-instagram"></use>
                   </svg>
                 </a>
               </li>
@@ -347,7 +364,7 @@
                   href="https://www.linkedin.com/in/ievgeniia-rychkova"
                 >
                   <svg class="social-icon" width="32" height="32">
-                    <use href="./images/sprite.svg#icon-linkedin"></use>
+                    <use href="./src/img/sprite.svg#icon-linkedin"></use>
                   </svg>
                 </a>
               </li>
@@ -366,7 +383,7 @@
       <div class="modal">
         <button class="modal-btn-close" type="button">
           <svg class="icon-cross" width="18" height="18">
-            <use href="./images/sprite.svg#icon-cross"></use>
+            <use href="./src/img/sprite.svg#icon-cross"></use>
           </svg>
         </button>
         <h2 class="section-title order-title">Order a call</h2>
