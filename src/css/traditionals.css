@@ -27,6 +27,18 @@
 .traditions-content {
   max-width: 708px;
 }
+
+
+
 .traditional-photo {
-  border-radius: 400px 400px 0 0;
+  display: none;
 }
+
+
+ @media (min-width: 361px) {
+.traditional-photo {
+    display: block;
+    border-radius: 400px 400px 0 0;
+  }
+ }
+

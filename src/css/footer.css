@@ -1,12 +1,23 @@
 /* footer */
 .footer {
   background-color: var(--bakery-landing-1-s1);
-  background-image: url('../images/footer_backgr_desk_@1x.webp');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   position: relative;
+  @media (min-width: 361px) {
+    background-image: url('../img/footer/footer_backgr_desk_@1x.webp');
+  }
 }
+
+@media screen and (min-resolution: 192dpi) and (min-width: 361px),
+  screen and (min-resolution: 2dppx) and (min-width: 361px),
+  screen and (min-device-pixel-ratio: 2) and (min-width: 361px) {
+  .footer {
+    background-image: url('../img/footer/footer_backgr_desk_@2x.webp');
+  }
+}
+
 .footer::before,
 .footer::after {
   position: absolute;
@@ -16,39 +27,64 @@
   bottom: 0;
 }
 .footer::before {
-  background-image: url('../images/bread.png');
-  width: 180px;
+  background-image: url('../img/footer/bread.png');
+  max-width: 100%;
+  /* width: 180px; */
   height: 120px;
 }
 .footer::after {
-  background-image: url('../images/double_bread.png');
-  width: 380px;
+  background-image: url('../img/footer/double_bread.png');
+  max-width: 100%;
   height: 190px;
 
   right: 0;
 }
+
+
+  @media (min-width: 361px) {
+    .footer-container {
+flex-direction: row;
+    }
+    
+  }
 .footer-container {
   display: flex;
+  flex-direction: column;
   gap: 20px;
   padding: 32px 0px;
+
 }
 .footer-nav,
 .footer-address {
   display: flex;
-  gap: 20px;
+  gap: 16px;
   flex-basis: 50%;
 }
+
+.footer-address {
+  flex-direction: column;
+}
+
 .footer-logo {
   flex-grow: 1;
 }
 .footer-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
   flex-grow: 1;
 }
 
 .address-info {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
   flex-grow: 1;
 }
 .address-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
   flex-grow: 1;
 }
 .address-link {
@@ -78,4 +114,9 @@ iframe {
 }
 .social-icon:hover {
   fill: var(--bakery-landing-1-c2);
+}
+
+.social-links {
+  display: flex;
+  gap: 22px;
 }
