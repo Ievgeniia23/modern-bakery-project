@@ -20,17 +20,31 @@
 }
 
 .header-menu {
-  display: flex;
-  gap: 64px;
-  flex-grow: 1;
-  justify-content: center;
+  display: none;
 }
+
+@media (min-width: 361px) {
+  .header-menu {
+    display: flex;
+    gap: 64px;
+    flex-grow: 1;
+    justify-content: center;
+  }
+}
+
+.order-btn {
+  display: none;
+}
+@media (min-width: 361px) {
+  .order-btn {
+    display: block;
+  }
+}
+
 .order-btn {
   border: 2px solid var(--bakery-landing-1-c2);
   border-radius: 8px;
   padding: 16px 32px;
-  width: 238px;
-  height: 59px;
   background-color: var(--bakery-landing-1-c2);
   cursor: pointer;
   font-weight: 600;
@@ -56,4 +70,8 @@
 
 .link:hover {
   color: var(--bakery-landing-1-c2);
+}
+
+.burger-menu {
+ fill: var(--bakery-landing-1-background);
 }

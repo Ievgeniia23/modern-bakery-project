@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Modern bakery</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -13,8 +14,14 @@
     />
 
     <link rel="stylesheet" href="./src/css/main.css" />
+
+    <!-- <link rel="stylesheet" href="./src/control-index.css"> -->
+
+    <!-- <link rel="stylesheet" href="./src/control.css" /> -->
   </head>
   <body>
+    <!-- Header -->
+
     <header class="header">
       <div class="container">
         <div class="header-container">
@@ -34,12 +41,17 @@
           <button class="order-btn modal-btn-open" type="button">
             Order a call
           </button>
+
+          <svg class="burger-menu" width="24" height="24">
+            <use href="./src/img/sprite.svg#icon-burger-menu"></use>
+          </svg>
         </div>
       </div>
     </header>
 
     <main>
       <!-- hero-section -->
+
       <section class="hero-section section">
         <div class="container">
           <h1 class="hero-title"><span class="accent">Modern</span> bakery</h1>
@@ -59,7 +71,8 @@
         </div>
       </section>
 
-      <!-- traditional-section -->
+      <!-- traditional-section  -->
+
       <section class="traditional-section section" id="traditional-section">
         <div class="container">
           <div class="traditions-container">
@@ -69,9 +82,9 @@
               </h2>
               <p>
                 <span class="accent-traditional-section">shop bakery</span> - is
-                a bakery that has taken the best of everything and preserved the
-                taste of traditional pastries and the naturalness of the
-                ingredients.
+                a bakery that has taken the best of everything <br />
+                and preserved the taste of traditional pastries and the
+                naturalness <br />of the ingredients.
               </p>
               <p>
                 We work like the most famous chains - <br />
@@ -96,7 +109,8 @@
       </section>
 
       <!-- chefs-section -->
-      <section class="section" id="chefs-section">
+
+      <section class="chefs-section section" id="chefs-section">
         <div class="container">
           <h2 class="chefs-title section-title">
             Our best <br />
@@ -156,8 +170,8 @@
                     I have 18 years of pastry experience.<span
                       >SHOP BEKERY</span
                     >
-                    - is our love, which we share with you every time through
-                    our pastries!
+                    - is our love, <br />which we share with you every time
+                    through our pastries!
                   </p>
                   <p class="chef-text">
                     I will make a unique filling for you for every taste!
@@ -171,7 +185,7 @@
 
       <!-- formats-section -->
 
-      <section class="section" id="formats-section">
+      <section class="formats-section section" id="formats-section">
         <div class="container">
           <h2 class="format-title section-title">Formats</h2>
           <div class="formats-container">
@@ -237,6 +251,9 @@
           <div class="form-container">
             <h2 class="contact-title">Join the bakery chain</h2>
             <p>Fill in the form to get in touch with us!</p>
+
+            <!-- Form -->
+
             <form id="contact-form" action="#">
               <div class="form-field">
                 <label class="form-label visually-hidden" for="name"
@@ -290,14 +307,15 @@
               </p>
             </form>
           </div>
-          <iframe
+          <!-- <iframe
+            class="address-map"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d40465.12282942901!2d10.257159715121324!3d45.535970251717835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4781763faa051585%3A0xf7c65b90f8563cf4!2sCastello%20di%20Brescia!5e1!3m2!1sit!2sit!4v1744022997002!5m2!1sit!2sit"
             width="603"
             height="595"
             allowfullscreen=""
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
+          ></iframe> -->
         </div>
       </section>
     </main>
@@ -340,7 +358,9 @@
                   >Italy, Brescia</a
                 >
               </li>
+            </ul>
 
+            <ul class="social-links">
               <li>
                 <a href="#">
                   <svg class="social-icon" width="32" height="32">
@@ -369,14 +389,16 @@
                 </a>
               </li>
             </ul>
-            <div class="address-info">
-              <a class="address-link" href="#">Privacy policy</a>
-              <p class="address-copyright">&copy 2022 Дані захищені</p>
-            </div>
           </address>
+
+          <div class="address-info">
+            <a class="address-link" href="#">Privacy policy</a>
+            <p class="address-copyright">&copy 2022 Дані захищені</p>
+          </div>
         </div>
       </div>
     </footer>
+
     <!-- Modal -->
 
     <div class="backdrop is-hidden">
