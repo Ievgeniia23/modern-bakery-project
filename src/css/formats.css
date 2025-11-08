@@ -1,4 +1,6 @@
 /* formats-section */
+
+
 .format-title {
   margin-bottom: 80px;
   text-align: center;
@@ -8,6 +10,7 @@
   gap: 32px;
   align-items: center;
 }
+
 .formats-title {
   margin-bottom: 16px;
   font-weight: 600;
