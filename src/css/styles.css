@@ -1,26 +1,38 @@
-
-* {
+/* * {
   outline: 2px solid rgba(255, 0, 0, 0.3);
-}
-
+} */
 
 .section {
   padding: 48px 0;
 }
+
+.section-title {
+  font-size: 32px;
+  line-height: 1.3;
+  font-weight: 900;
+  color: var(--bakery-landing-1-s1);
+}
+
+@media (min-width: 361px) {
+  .section-title {
+    font-size: 64px;
+  }
+}
+
 .container {
   width: 100%;
   min-width: 320px;
   max-width: 360px;
   margin: 0 auto;
   padding: 0 20px;
-} 
+}
 
 @media (min-width: 361px) {
   .container {
     max-width: 1440px;
     padding: 0 100px;
   }
-} 
+}
 
 /* Form */
 .form-field {

@@ -1,7 +1,12 @@
 /* traditional-section */
+.traditional-section {
+  padding-top: 0;
+}
 
+@media(min-width) {
 .traditional-section {
   padding-top: 96px;
+}
 }
 
 .traditions-container {
@@ -10,7 +15,24 @@
 }
 
 .traditional-title {
+  margin-bottom: 24px;
+}
+
+@media (min-width:361px) {
+.traditional-title {
   margin-bottom: 42px;
+}
+}
+.traditions-text {
+font-weight: 300;
+font-size: 16px;
+}
+
+@media (min-width:361px){
+  .traditions-text {
+font-weight: 600;
+font-size: 18px;
+}
 }
 
 .accent-traditional-section {
