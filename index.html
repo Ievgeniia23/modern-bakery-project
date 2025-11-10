@@ -111,7 +111,7 @@
       <!-- chefs-section -->
 
       <section class="chefs-section section" id="chefs-section">
-        <div class="container">
+        <div class="container chefs-container">
           <h2 class="chefs-title section-title">
             Our best <br />
             <span class="accent-chefs-section">chefs</span>
@@ -122,12 +122,12 @@
                 <img
                   class="chef-photo"
                   srcset="
-                    ./src/img/chefs/Sofia_chef_desk_@1x.webp 240w,
-                    ./src/img/chefs/Sofia_chef_desk_@2x.webp 480w,
                     ./src/img/chefs/Sofia_chef_mob_@1x.webp  140w,
-                    ./src/img/chefs/Sofia_chef_mob_@2x.webp  280w
+                    ./src/img/chefs/Sofia_chef_mob_@2x.webp  280w,
+                    ./src/img/chefs/Sofia_chef_desk_@1x.webp 240w,
+                    ./src/img/chefs/Sofia_chef_desk_@2x.webp 480w
                   "
-                  sizes="(min-width:361px) 240px, (max-width: 360px) 140px"
+                  sizes="(max-width: 360px) 140px, (min-width:361px) 240px"
                   src="./src/img/chefs/Sofia_chef_desk_@1x.webp"
                   alt="Sofia's chef photo"
                 />
@@ -154,28 +154,28 @@
                 <img
                   class="chef-photo"
                   srcset="
-                    ./src/img/chefs/Alex_chef_desk_@1x.webp 240w,
-                    ./src/img/chefs/Alex_chef_desk_@2x.webp 480w,
                     ./src/img/chefs/Alex_chef_mob_@1x.webp  140w,
-                    ./src/img/chefs/Alex_chef_mob_@2x.webp  280w
+                    ./src/img/chefs/Alex_chef_mob_@2x.webp  280w,
+                    ./src/img/chefs/Alex_chef_desk_@1x.webp 240w,
+                    ./src/img/chefs/Alex_chef_desk_@2x.webp 480w
                   "
-                  sizes="(min-width:361px) 240px, (max-width: 360px) 140px"
+                  sizes="(max-width: 360px) 140px, (min-width:361px) 240px"
                   src="./src/img/chefs/Alex_chef_desk_@1x.webp"
                   alt="Alex's chef photo"
                 />
                 <div class="chef-info">
                   <h3 class="chef-title">Alex</h3>
-                  <p class="chef-text">Hi, I'm Alex!</p>
-                  <p class="chef-text">
-                    I have 18 years of pastry experience.<span
-                      >SHOP BEKERY</span
-                    >
-                    - is our love, <br />which we share with you every time
-                    through our pastries!
-                  </p>
-                  <p class="chef-text">
-                    I will make a unique filling for you for every taste!
-                  </p>
+                  <div class="chef-text">
+                    <p>Hi, I'm Alex!</p>
+                    <p>
+                      I have 18 years of pastry experience.<br><span
+                        >SHOP BEKERY</span
+                      >
+                      - is our love, <br />which we share with you every time<br>
+                      through our pastries!
+                    </p>
+                    <p>I will make a unique filling for you<br> for every taste!</p>
+                  </div>
                 </div>
               </article>
             </li>
