@@ -2,9 +2,16 @@
   outline: 2px solid rgba(255, 0, 0, 0.3);
 } */
 
+
+.section {
+  padding: 20px 0;
+}
+@media(min-width:361px){
 .section {
   padding: 48px 0;
 }
+}
+
 
 .section-title {
   font-size: 32px;
